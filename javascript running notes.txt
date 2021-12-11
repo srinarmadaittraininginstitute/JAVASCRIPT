@@ -1,0 +1,23 @@
+JAVASCRIPT
+-----------------
+Brenden Eich, 1995, Netscape communications Corporation. Initial Name is LiveScript. Sun Microsystems adopted LiveScript and they changed to JavaScript.  JavaScript is mainly used for validation purpose. JavaScript is case sensitive language.
+
+display properties
+--------------------------
+document.write("message");
+window.alert("Alert Message");
+window.confirm("are you sure want to delete?");
+window.prompt();	/* It is used to enter the value at run time. */
+console.log("message");
+
+datatypes
+---------------
+var, let, const is used to declare variables.
+var is used for global purpose.
+let is used for local purpose.
+const is also used for local purpose.
+
+
+
+
+

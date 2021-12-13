@@ -1,0 +1,71 @@
+conditional statements:-
+----------------------------------
+if:-
+	if(condition)
+		statement1;
+
+if-else:-
+	if(condition)
+		statement1;
+	else
+		statement2;
+
+if-else-ladder:-
+	if(condition1)
+		statement1;
+	else if(condition2)
+		statement2;
+	else if(condition3)
+		statement3;
+	else if(condition4)
+		statement4;
+
+switch:-
+	switch(value/variable/expression)
+	{
+	case value1/expression1: 
+		statement1;
+	case value2/expression2: 
+		statement2;
+	default:
+		statement n;
+	case value3/expression3: 
+		statement3;	
+	}
+
+parseInt	-	string to integer
+parseFloat -	string to float
+
+Control statements:-
+----------------------------
+repeat the process continuously 
+1. while
+2. do-while
+3. for
+
+while(condition)
+{
+statements;
+}
+
+
+do
+{
+statements;
+}
+while(condition);
+
+
+for(initialization;condition;increment/decrement)
+{
+statements;
+}
+
+
+
+	
+
+
+
+	
+

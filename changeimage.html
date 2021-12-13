@@ -1,0 +1,20 @@
+<html>
+	<head>
+		<title>JAVASCRIPT can Change HTML Example</title>
+		<script>
+		function change()	
+		{
+			document.getElementById("img1").src="3.png";	
+		}
+		function change1()	
+		{
+			document.getElementById("img1").src="2.png";	
+		}
+		</script>
+	</head>
+	<body>
+		<input type="button" onClick="change()" Value="Show Image1"/>
+		<img src="2.png" id="img1" width="100"/>
+		<input type="button" onClick="change1()" Value="Show Image2"/>
+	</body>
+</html>

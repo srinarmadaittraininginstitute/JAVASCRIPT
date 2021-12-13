@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<script>
+		var v;
+		function fun()
+		{
+			v=setInterval(function(){alert("Hi");},3000);	
+		}
+		function fun1()
+		{
+			clearInterval(v);
+		}	
+		</script>
+	</head>
+	<body>
+<input type="button" value="Show Message For Every 3 seconds" onClick="fun()"/>
+<input type="button" value="Stop Showing Message" onClick="fun1()"/>
+	</body>
+</html>

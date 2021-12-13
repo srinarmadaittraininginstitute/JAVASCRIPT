@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<script>
+			function add()
+			{
+		n1=parseInt(document.getElementById("t1").value);	
+		n2=parseInt(document.getElementById("t2").value);
+		result=n1+n2;
+		document.getElementById("res").value=result;
+			}	
+		</script>
+	</head>
+	<body>
+		<table>
+			<tr><th colspan="2">ARITHMETIC OPERATIONS</th></tr>
+	<tr><th>Enter Number1:</th><th><input type="text" id="t1" /></th></tr>
+	<tr><th>Enter Number2:</th><th><input type="text" id="t2" /></th></tr>
+	<tr><th>Result:</th><th><input type="text" id="res" /></th></tr>
+<tr><th></th><th><input type="button" value="Sum" onClick="add()"/></th></tr>
+		</table>
+	</body>
+</html>

@@ -1,0 +1,18 @@
+<html>
+	<head>
+		<script>
+		function fun()
+		{
+			v=setTimeout(function(){alert("Hi");},3000);	
+		}
+		function fun1()
+		{
+			clearTimeout(v);
+		}	
+		</script>
+	</head>
+	<body>
+	<input type="button" value="Show Message After 3 seconds" onClick="fun()"/>
+	<input type="button" value="Stop Showing Message" onClick="fun1()"/>
+	</body>
+</html>

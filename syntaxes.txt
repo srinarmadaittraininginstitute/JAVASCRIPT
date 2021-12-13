@@ -1,0 +1,16 @@
+Brenden Eich, 1995, Live Script
+Sun Microsystems	->	JavaScript
+
+
+variable=setTimeout(
+	function(){ statements; },time in milliseconds
+);
+
+clearTimeout(variable);
+
+variable=setInterval(
+	function(){ statements; },time in milliseconds
+);
+
+clearInterval(variable);
+

@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<title>JavaScript switch example</title>
+		<script>
+		function sh()
+		{
+		x=parseInt(document.getElementById("sn").value);
+		switch(x)
+		{
+		case 100:
+			document.write("Police");
+			break;	
+		case 50*2+1:
+			document.write("Fire");
+			break;
+		default:
+			document.write("Invalid Service");
+			break;
+		case 108:
+			document.write("Ambulance");
+			break;
+		}
+		}
+		</script>
+	</head>
+	<body>
+	Enter Service Number: <input type="text"  id="sn" /><br/>
+	<input type="button" value="show" onClick="sh()" />	</body>
+</html>

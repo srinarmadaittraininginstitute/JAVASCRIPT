@@ -1,0 +1,34 @@
+<html>
+	<head>
+	<script>
+		function fun1()
+		{
+		document.write("<br/>This is function1");
+		}
+		function fun2()
+		{
+		document.write("<br/>This is function2");
+		fun1();
+		}
+		function fun3()
+		{
+		document.write("<br/>This is function3");
+		fun5();
+		}	
+		function fun4()
+		{
+		document.write("<br/>This is function4");
+		fun2();
+		}
+		function fun5()
+		{
+		document.write("<br/>This is function5");
+		fun4();		
+		}
+		fun3();
+		
+	</script>
+	</head>
+	<body>
+	</body>
+</html>

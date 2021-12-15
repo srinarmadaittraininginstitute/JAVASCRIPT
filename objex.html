@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<title>JavaScript Object Example</title>
+		<script>
+		var obj={Name:"Rama",Salary:"12000"};
+		document.write(obj.Name+" "+obj.Salary+"<br/>");
+		document.write(obj["Name"]+" "+obj["Salary"]);
+		var obj1=new Object();
+		obj1.EmpNo=100;
+		obj1.Name="Sairam";
+		obj1.Salary=15000;
+	document.write("<br/>"+obj1.EmpNo+" "+obj1.Name+" "+obj1.Salary);
+		function fun(eno,ename,sal)
+		{
+		this.eno=eno;
+		this.ename=ename;
+		this.sal=sal;
+		}	
+		e=new fun(100,"Rama",12000);
+		document.write("<br/>"+e.eno+" "+e.ename+" "+e.sal);
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>

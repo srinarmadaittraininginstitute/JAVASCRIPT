@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<title>JavaScript Object Methods Example</title>
+		<script>
+		var per={
+			LName:"Ram",	
+			FName:"Sita",
+			Age:12,
+			getFullName:function(){
+			return this.FName+" "+this.LName;
+			}
+			/*this.changeAge=change;*/
+			changeAge:function(age){
+			this.Age=age
+			}
+		};			
+per.changeAge(22);
+document.write("Full Name = "+per.getFullName()+" Age = "+per.Age);
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<title>document title,URL example</title>
+		<script>
+		document.write("The document title is "+document.title);	
+	document.write("<br/>The document URL is "+document.URL);	
+		function fun1(e)
+		{
+	/*document.getElementById("t1").style.backgroundColor="red";*/
+		document.write(e.keyCode);
+		}
+		function fun2()
+		{
+	document.getElementById("t1").style.backgroundColor="green";
+		}
+		function fun3()
+		{
+	document.getElementById("t1").style.backgroundColor="blue";
+	document.getElementById("t1").style.color="white";
+		}
+		</script>
+	</head>
+	<body>
+		<br/>Enter Your Name: <input type="text" id="t1" onkeyup="fun1(event)" onkeypress="fun2()" onkeydown="fun3()"/>
+	</body>
+</html>

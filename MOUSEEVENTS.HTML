@@ -1,0 +1,25 @@
+-<html>
+	<head>
+		<title>Mouse Events example</title>
+		<script>
+		document.write(window.location);
+		function fun(e)
+		{
+		if(e.button==0)
+		document.write("You clicked the left mouse button");
+		else if(e.button==2)
+		document.write("You clicked the right mouse button");
+		else if(e.button==1)
+		document.write("You clicked the middle mouse button");	
+		}		
+		function fun1(e)
+		{
+	document.write("Type of event is "+e.type+" <br/>Pressed button code is"+e.button+"<br/>In X-Axis "+e.clientX+" and Y-Axis "+e.clientY);	
+		}		
+		</script>
+	</head>
+	<body>
+	<input type="button" value="show" ondblclick="fun(event)"  />
+<input type="button" onClick="fun1(event)"  value="Click Me"/>
+	</body>
+</html>

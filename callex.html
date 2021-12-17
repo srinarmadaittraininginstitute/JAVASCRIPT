@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<script>
+		function sayHello(){
+			  return "Hello " + this.name;
+		}        
+		var obj = {name: "Sandy"};        
+		document.write(sayHello.call(obj));
+		
+function saySomething(message){
+  return "<br/>"+this.name + " is " + message;
+}        
+var person4 = {name:  "John"};      
+document.write(saySomething.apply(person4, ["awesome"]));
+
+var bikeDetails = {
+    displayDetails: function(registrationNumber,brandName){
+    return "<br/>"+this.name+ " , "+ "bike details: "+ registrationNumber + " , " + brandName;
+  }
+}
+        
+var person1 = {name:  "Vivek"};
+var detailsOfPerson1 = bikeDetails.displayDetails.bind(person1, "TS0122", "Bullet");        
+// Binds the displayDetails function to the person1 object
+document.write(detailsOfPerson1());
+
+	</script>
+	</head>
+	<body>
+	</body>
+</html>

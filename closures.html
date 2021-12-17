@@ -1,0 +1,14 @@
+<html>
+	<head>
+	<script>
+		function randomFunc(){
+  			var obj1 = {name:"Vivian", age:45};
+			  return function(){
+		   document.write(obj1.name + " is "+ "awesome"); 
+		  }
+		}
+var initialiseClosure = randomFunc(); 
+initialiseClosure(); 
+	</script>
+	</head>
+</html>

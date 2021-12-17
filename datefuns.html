@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<title>JavaScript date functions Example</title>	
+		<script>
+			var d=new Date();
+			document.write("Today's Date is "+d);
+		document.write("<br/>Today's Date is "+d.getDate());
+	document.write("<br/>Present Month is "+(d.getMonth()+1));
+	document.write("<br/>Present Year is "+d.getFullYear());
+	document.write("<br/>Present Hour is "+d.getHours());
+	document.write("<br/>Present Minutes is "+d.getMinutes());
+	document.write("<br/>Present Seconds is "+d.getSeconds());
+	d.setDate(d.getDate()+1);
+	document.write("<br/>After Setting Date is "+d);
+	d.setFullYear(2022,7,27);
+	document.write("<br/>After Setting Full Year is "+d);
+		</script>
+	</head>
+</html>

@@ -2,12 +2,26 @@
 	<head>
 		<title>String Functions</title>
 		<script>
-		var st="rama";
-		document.write("String = "+st);
-	document.write("<br/>The length of the string is "+st.length);
+		var st1="rama";
+		var st2="sita";
+		document.write("String = "+st1);
+		document.write("<br/>String in bold = "+st1.bold());
+		document.write("<br/>String in italics = "+st1.italics());
+		document.write("<br/>String in big font = "+st1.big());
+		document.write("<br/>String in small font = "+st1.small());
+	document.write("<br/>The length of the string is "+st1.length);
+document.write("<br/>String with red color font  "+st1.fontcolor("red"));
+document.write("<br/>String with 12 font size is "+st1.fontsize(12));
 		var str=new String("This is SaiRam");
-		document.write("<br/>String = "+str);
-	document.write("<br/>The length of the string is "+str.length);			
+		document.write("<br/>String = "+str);	
+document.write("<br/>The length of the string is "+str.length);	document.write("<br/>The 0th character in string is "+st1.charAt(0));	
+document.write("<br/>After Concatenating the string is "+st1.concat(st2));
+document.write("<br/>First index of a in "+st1+" is "+st1.indexOf('a'));
+document.write("<br/>Last index of a in "+st1+" is "+st1.lastIndexOf('a'));
+document.write("<br/>"+st1+" in Upper case is "+st1.toUpperCase());
+document.write("<br/>"+st1+" in Lower case is "+st1.toLowerCase());
+document.write("<br/>"+str+" in slice is "+str.slice(2,6));
+document.write("<br/>"+str+" in slice is "+str.slice(2,));
 		</script>
 	</head>
 	<body>

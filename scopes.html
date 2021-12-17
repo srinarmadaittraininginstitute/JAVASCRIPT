@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<title>var, let example</title>
+		<script>
+var y = 24;
+function favFunction(){
+  var x = 667;
+  var anotherFavFunction = function(){
+    document.write("X value is "+x); 
+  }
+  var yetAnotherFavFunction = function(){
+    document.write("and Y value is "+y); 
+  }
+  anotherFavFunction();
+  yetAnotherFavFunction();
+}
+favFunction();
+
+		{
+ 		 let x = 45;
+		const pi=3.14;
+		document.write("<br/>Let variable value = "+x); 
+		document.write("<br/>PI = "+pi);
+		}
+		//document.write(x); 
+		//document.write("PI = "+pi);
+		</script>
+	</head>
+</html>

@@ -1,0 +1,20 @@
+<html>
+	<head>
+		<title>getElementById Example</title>	
+		<script>
+		function sh(x)
+		{
+		document.getElementById("t1").value=x;
+		}
+		</script>
+	</head>
+	<body>
+		Select Your Blood Group:<br/>
+		<input type="radio" name="r" value="A +Ve" onclick="sh(this.value)"/>A+Ve<br/>
+		<input type="radio" name="r" value="B +Ve" onclick="sh(this.value)"/>B+Ve<br/>
+		<input type="radio" name="r" value="AB +Ve" onclick="sh(this.value)"/>AB+Ve<br/>
+		<input type="radio" name="r" value="O +Ve" onclick="sh(this.value)"/>O+Ve<br/>
+		<input type="radio" name="r" value="O -Ve" onclick="sh(this.value)"/>O-Ve<br/>
+Your Blood Group is: <input type="text" id="t1" />
+	</body>
+</html>

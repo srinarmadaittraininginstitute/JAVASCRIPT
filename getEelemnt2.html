@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<title>getElementById Example</title>	
+		<script>
+		function show()
+		{
+		x=document.getElementById("s1");
+		document.getElementById("t1").value=x.options[x.selectedIndex].text;
+		}
+		</script>
+	</head>
+	<body>
+		Select Your Blood Group:<br/>
+		<select id="s1" onchange="show()">
+			<option>Internet Explorer</option>
+			<option>Mozilla Firefox</option>
+			<option>Google Chrome</option>
+			<option>Opera</option>
+			<option>Safari</option>
+		</select><br/>
+Your Blood Group is: <input type="text" id="t1" />
+	</body>
+</html>

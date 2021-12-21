@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<title>Date Object Example</title>
+		<script>
+		var d=new Date();
+		document.write("Date and Time is "+d);
+		document.write("<br/>Today's Date is "+d.getDate());
+	document.write("<br/>Present Month is "+(d.getMonth()+1));
+		document.write("<br/>Full Year is "+d.getFullYear());
+	document.write("<br/>Present Time in Hours is "+d.getHours());
+document.write("<br/>Present Minutes is "+d.getMinutes());
+document.write("<br/>Present Seconds is "+d.getSeconds());
+d.setDate(d.getDate()+1);
+	document.write("<br/>Tomorrows Date and Present Time is "+d);
+d.setFullYear(2022,7,31);
+	document.write("<br/>Setted Full Year is "+d);
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

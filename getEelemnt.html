@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<title>getElementById Example</title>	
+		<script>
+			function sh()
+			{
+			x=document.getElementById("header");
+			alert("The tag Name is "+x.tagName);
+			}
+			function show()
+			{
+			var c=document.getElementById("c1");
+			if(c.checked)
+document.getElementById("t1").value=document.getElementById("t1").value.toUpperCase();
+			else
+document.getElementById("t1").value=document.getElementById("t1").value.toLowerCase();
+			}
+		</script>
+	</head>
+	<body>
+		<h1 id="header" onclick="sh()">Hi</h1>
+		<input type="text" id="t1" /><br/>
+		<input type="checkbox" id="c1" onclick="show()"/>Check to UpperCase uncheck to LowerCase
+	</body>
+</html>

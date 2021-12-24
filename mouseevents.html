@@ -1,0 +1,51 @@
+<html>
+	<head>
+		<title>dblclick example</title>
+		<script>
+		function changecolor()
+		{
+		document.getElementById("elem").style.color="red";
+		}
+		function changeColor()
+		{
+		document.getElementById("ele").style.color="green";
+		}
+		function reveseColor()
+		{
+		document.getElementById("ele").style.color="blue";	
+		}
+		function openPopup()
+		{
+	document.getElementById("popup").style.display="block";
+		}
+		function closePopup()
+		{
+	document.getElementById("popup").style.display="none";
+		}
+		function enterColor()
+		{
+	document.getElementById("btn1").style.backgroundColor="cyan";
+		}
+		function leaveColor()
+		{
+document.getElementById("btn1").style.backgroundColor="magenta";
+		}
+		function trackMouse()
+		{
+			var x=event.clientX;
+			var y=event.clientY;
+			alert("Mouse Position : "+x+" , "+y);
+		}
+		</script>
+	</head>
+	<body>
+<p id="elem" ondblclick="changecolor()">Double click on this element</p>
+<button onmouseover="changeColor()" id="ele" onmouseout="reveseColor()">Change Color</button>
+<button onmousedown="openPopup()" id="btn">Show Popup</button>
+<button onmouseup="closePopup()" >Hide Popup</button>
+<div id="popup">
+<p>This is a Popup.</p>
+</div>
+<button onmouseenter="enterColor()" id="btn1" onmouseleave="leaveColor()" onmousemove="trackMouse()">Change Color</button>
+	</body>
+</html>

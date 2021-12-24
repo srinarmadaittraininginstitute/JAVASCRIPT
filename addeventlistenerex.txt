@@ -1,0 +1,78 @@
+Events are actions that occur in the browser. Events are the actions performed on HTML elements by the user. For Ex, when the user clicks on a link, the browser sends an event to the server. The server can take some action based on the event.
+
+Handling events
+
+Each event in javascript has something that is constantly looking for that event to occur which is called event listener.
+The event lisener triggers a function execution whenever the event occurs.
+1. using the adddEventListener() method.
+2. using the on attribute. for example onclick, onmouseover etc.
+
+1. using the addEventListener() method
+The addEventListener() method is used to add an event listener to an element. The addEventListener() method takes 2 arguments.
+
+event	-	The event that is being listened for.
+listener	-	The function that is called when the event occurs.
+
+The event argument is the name of the event that is being listened to. The listener argument is the function that is called when the event occurs.
+The addEventListener() method returns the listener argument.
+
+
+2. using the on attribute
+using the on attribute method you can directly add an event listener to the HTML element. 
+Ex of attributes are onclick, onmouseover, etc.
+
+
+Remove Event Listener
+To remove an event listener from an element, you can use the removeEventListener() method.
+It takes 2 arguments.
+1. event
+2. listener
+
+Types of Events
+----------------------
+window events
+mouse events
+keyboard events
+form events
+storage events
+drag events
+clipboard events
+
+window events:-
+----------------------
+onload	webpage loaded
+onresize	resizing browser tab
+
+Mouse events
+--------------------
+click	
+dblclick
+mouseover
+mouseout
+mouedown
+mouseup
+mousemove
+mouseenter
+mouseleave
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

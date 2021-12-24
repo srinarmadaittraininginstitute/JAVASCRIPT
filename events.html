@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<title>addEventListener Example</title>
+	</head>
+	<body>
+		<button id="btn">Alert!</button>
+	<button onclick="removeEvent()">Remove Event Listener</button>
+		<script>
+			const btn=document.getElementById("btn");
+			btn.addEventListener("click",show);
+			function show()
+			{
+			alert("This is show.");
+			}
+			function removeEvent()	
+			{
+			btn.removeEventListener("click",show);
+			}
+		</script>
+	</body>
+</html>

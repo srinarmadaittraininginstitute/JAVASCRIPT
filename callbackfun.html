@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<title>Callback functions</title>
+		<script>
+			function fun(x,y,cb)
+			{			
+			return cb()+(x+y);			
+			}
+			function display()
+			{
+			return "addition of two numbers is ";
+			}
+			a=10;			
+			alert(fun(a,2,display));
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
